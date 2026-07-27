@@ -1,90 +1,67 @@
-# 🧠 Krutanic Solutions Internship Projects
+# Applied Data Science & Predictive Machine Learning Portfolio
 
-This repository highlights the core projects completed during my internship at **Krutanic Solutions** as a Data Science Intern. The work focused on applying analytical techniques to real-world datasets, building scalable solutions, and delivering insights through clean code and compelling visuals.
+A comprehensive data science repository featuring end-to-end predictive machine learning pipelines, exploratory data analysis, and feature engineering applied to automotive valuation and healthcare risk screening.
 
-## 🔍 Highlights
-- Performed data cleaning and transformation to prepare datasets for analysis
-- Conducted exploratory data analysis (EDA) to identify trends, outliers, and correlations
-- Built interactive dashboards using Power BI and Python to communicate insights effectively
-- Applied statistical methods and machine learning models for predictive analysis
-- Automated data workflows and implemented reusable scripts for efficiency
-- Documented findings and presented results in stakeholder-friendly formats
+---
 
-Each project reflects a blend of technical precision, ethical framing, and practical impact—aligned with Krutanic’s mission to deliver data-driven solutions across industries.The description of each project, which was worked upon during the internship, is as follows:-
+## 📌 Repository Overview
+This portfolio highlights technical implementations across predictive modeling, data cleaning, and statistical analysis. It demonstrates the complete lifecycle of data science workflows—translating raw datasets into trained machine learning models, feature importance insights, and stakeholder-ready analytics.
 
+### 🔍 Key Competencies Demonstrated
+* **Data Transformation & Cleaning:** Preprocessed complex datasets, handled missing values, and managed outlier distributions.
+* **Exploratory Data Analysis (EDA):** Identified underlying trends, correlations, and feature distributions using visual analytics.
+* **Feature Engineering & Encoding:** Engineered domain-specific features and applied categorical encoding (`One-Hot Encoding`, `Label Encoding`).
+* **Machine Learning Pipelines:** Built, tuned, and evaluated regression and classification models using Scikit-Learn.
+* **Model Evaluation Metrics:** Evaluated models using $R^2$, MAE, and RMSE for regression, alongside Recall, ROC-AUC, and Confusion Matrices for classification.
 
-# 1. 🚗 Krutanic Solutions Car Price Prediction Model
-## 🔍 Overview
-This project aims to predict the resale price of used cars using machine learning techniques—supporting smarter pricing strategies for automotive platforms and dealerships.
+---
 
-## 💡 Key Highlights
-Domain: Automotive Analytics
+# 🚗 Project 1: Used Car Resale Valuation Model
 
-Tech Stack: Python, Pandas, Scikit-learn, Matplotlib
+## 📌 Overview
+An automotive analytics project focused on predicting used car resale values using supervised machine learning algorithms to enable data-driven pricing strategies.
 
-Models Used: Linear Regression, Random Forest
-
-Focus Areas: Feature engineering, model tuning, business relevance
+## 🛠️ Tech Stack & Methods
+* **Domain:** Automotive Analytics / Price Optimization
+* **Tools & Libraries:** Python, Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
+* **Algorithms Applied:** Linear Regression, Random Forest Regressor
+* **Focus Areas:** Feature engineering, hyperparameter tuning, model evaluation
 
 ## 🧠 Problem Statement
-Used car pricing is influenced by multiple factors—brand, mileage, fuel type, transmission, and more. Manual pricing often leads to inconsistencies and undervaluation. This model automates price estimation with data-driven accuracy.
+Used car pricing is influenced by non-linear variables—including brand tier, mileage, fuel type, transmission, and vehicle age. Manual estimation leads to valuation inconsistencies. This pipeline automates price estimation with statistical accuracy.
 
-## ⚙️ Methodology
-Conducted EDA to understand pricing trends and feature distributions
+## ⚙️ Methodology & Execution
+1. **EDA & Trend Analysis:** Analyzed depreciation rates against vehicle age, mileage thresholds, and brand categories.
+2. **Feature Engineering & Encoding:** Applied categorical encoding and feature scaling to structure raw vehicle specs for linear and non-linear tree models.
+3. **Model Training & Evaluation:** Trained baseline linear regression and ensemble Random Forest models, optimizing parameters using $R^2$, MAE, and RMSE evaluation metrics.
 
-Applied label encoding and one-hot encoding for categorical variables
+## 📊 Key Results & Insights
+* **Model Performance:** Random Forest Regressor outperformed baseline linear models, achieving strong predictive precision across price tiers.
+* **Primary Price Drivers:** Identified mileage, vehicle age, and brand category as the highest-ranked feature importance factors.
 
-Trained regression models and optimized hyperparameters for performance
+---
 
-Evaluated using metrics like R² score, MAE, and RMSE
+# 🫁 Project 2: Clinical Lung Cancer Risk Prediction
 
-## 📊 Results & Insights
-Random Forest outperformed baseline models with strong predictive accuracy
+## 📌 Overview
+A healthcare analytics project applying supervised machine learning classification to assess lung cancer risk profiles based on patient clinical indicators and behavioral risk factors.
 
-Identified key price drivers: mileage, brand, fuel type
+## 🛠️ Tech Stack & Methods
+* **Domain:** Healthcare Analytics / Predictive Diagnostics
+* **Tools & Libraries:** Python, Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
+* **Algorithms Applied:** Random Forest Classifier, Support Vector Machines (SVM)
+* **Model Accuracy:** ~92%
+* **Focus Areas:** Feature interpretability, recall optimization, ethical modeling
 
-Proposed integration into resale platforms for real-time valuation
+## 🧠 Problem Statement
+Early detection of lung cancer significantly improves patient outcomes. This project leverages accessible medical and behavioral indicators to classify high-risk profiles, supporting proactive risk screening frameworks.
 
-## 🌱 Future Scope
-Incorporate regional pricing trends and seasonal demand factors
+## ⚙️ Methodology & Execution
+1. **Clinical Risk Factor EDA:** Examined correlation patterns between key symptoms, behavioral factors (e.g., smoking intensity), and demographic attributes.
+2. **Feature Optimization:** Engineered composite variables for fatigue clustering and behavioral risk intensity.
+3. **Model Training & Recall Optimization:** Trained Random Forest and SVM classifiers, prioritizing high **Recall** and **ROC-AUC** scores to minimize false negatives in medical screening.
+4. **Ethical Framing:** Evaluated decision thresholds to prevent misclassification risks and over-reliance on limited attributes.
 
-Add visual dashboards for dealer-side decision support
-
-Explore deployment via web app or API for commercial use
-
-# 2. 🫁 Krutanic Solutions Lung Cancer Predictive Model
-## 🔍 Overview
-This project leverages machine learning to predict lung cancer risk using clinical and behavioral indicators—empowering early screening and data-driven healthcare decisions.
-
-## 💡 Key Highlights
-Domain: Healthcare Analytics
-
-Tech Stack: Python, Scikit-learn, Pandas, Matplotlib
-
-Models Used: Random Forest, SVM
-
-Accuracy Achieved: Approximately 92%
-
-Focus Areas: Ethical modeling, feature interpretability, stakeholder-ready insights
-
-## 🧠 What It Solves
-Lung cancer often goes undetected until advanced stages. This model identifies high-risk profiles based on accessible data—supporting proactive intervention and scalable screening tools.
-
-## ⚙️ Methodology
-Performed EDA to uncover symptom patterns and demographic risk factors
-
-Engineered features for smoking intensity, fatigue clustering, and genetic predisposition
-
-Trained and evaluated multiple classifiers with a focus on recall and ROC-AUC
-
-Prioritized ethical framing to avoid overfitting and misclassification risks
-
-## 📊 Impact & Integration
-Designed for potential integration into Krutanic’s digital health platform, enabling community-level screening and clinical decision support. Visualizations and model outputs are tailored for non-technical stakeholders.
-
-## 🌱 Future Scope
-Expand dataset with environmental and socioeconomic variables
-
-Collaborate with medical experts for clinical validation
-
-Explore deployment via mobile health apps and dashboards
+## 📊 Key Results & Impact
+* Achieved **~92% classification accuracy** with optimized sensitivity/recall for high-risk patient indicators.
+* Output structured feature importance rankings to assist non-technical stakeholders in interpreting risk factors.
